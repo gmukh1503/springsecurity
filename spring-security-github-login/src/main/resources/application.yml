@@ -1,0 +1,18 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+   name: SpringSecurityGitHubSingleSignOn
+
+security:
+  oauth2:
+    client: 
+      client-id: Iv1.5de8d7bfad45bd29
+      client-secret: 86cae3ef1644689ef3aaf6c905ef9c2803f6e2cb
+      access-token-uri: https://github.com/login/oauth/access_token
+      user-authorization-uri: https://github.com/login/oauth/authorize 
+      client-authentication-scheme: form
+      
+    resource:
+      user-info-uri: https://api.github.com/user
